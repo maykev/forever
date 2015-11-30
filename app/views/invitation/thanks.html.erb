@@ -1,0 +1,13 @@
+<div id="rsvp">
+    <div class="thumbnail-border">
+        <div class="thumbnail">
+            <% if @invitees.blank? %>
+                <p>Invitation cannot be found.</p>
+            <% else %>
+                <p>Thank you for responding.</p>
+
+                <p>We look forward to seeing <%= @invitees[0..-2].join(', ') %> and <%= @invitees.last %> at the wedding</p>
+            <% end %>
+        </div>
+    </div>
+</div>

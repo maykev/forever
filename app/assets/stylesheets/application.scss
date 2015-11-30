@@ -1,0 +1,84 @@
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import "invitation";
+@import "main";
+@import "rsvp";
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("background.jpg");
+  height: 100%;
+}
+
+hr {
+  margin-bottom: 10px;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  background-color: whitesmoke;
+  max-width: 1024px;
+  height: 100%;
+  padding: 0px;
+  padding-bottom: 10px;
+}
+
+.navbar {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FCE2D3;
+  border-color: #FCE2D3;
+  border-radius: 0px;
+  font-size: 16px;
+}
+
+.navbar-brand {
+  padding: 5px 15px 5px 15px;
+}
+
+.navbar-tramline {
+  border: 1px solid #FCE2D3;
+  background-color: #FCE2D3;
+  height: 3px;
+
+  &.top {
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+
+  &.bottom {
+    margin-top: -15px;
+  }
+}
+
+.thumbnail {
+  background-color: #D5EBDE;
+  border: 1px solid #D5EBDE;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.thumbnail-border {
+  border: 4px solid #D5EBDE;
+  padding: 2px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  background-color: #646265;
+  border-color: #646265;
+  border-radius: 0px;
+  font-style: italic;
+  color: whitesmoke;
+}

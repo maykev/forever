@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forever</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="container">
+    <hr class="navbar-tramline top">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="<%= root_path %>"><%= image_tag 'logo.png' %></a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="<%= our_story_index_path %>">Our Story</a></li>
+            <li><a href="<%= rsvp_index_path %>">R.S.V.P</a></li>
+            <li><a href="<%= registry_index_path %>">Registry</a></li>
+            <li><a href="<%= location_index_path %>">Location</a></li>
+            <li><a href="<%= gallery_index_path %>">Gallery</a></li>
+            <li><a href="<%= blog_index_path %>">Blog</a></li>
+            <li><a href="<%= contact_us_path %>">Contact Us</a></li>
+          </ul>
+      </div>
+    </nav>
+    <hr class="navbar-tramline bottom">
+
+    <%= yield %>
+  </div>
+</body>
+</html>

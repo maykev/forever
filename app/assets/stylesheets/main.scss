@@ -1,0 +1,30 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.scss.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#main {
+  .carousel {
+    width: 100%;
+    height: 380px;
+    background-color: #D5EBDE;
+    border: 4px solid #D5EBDE;
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+      width: 100%;
+      height: 372px;
+    }
+  }
+
+  .carousel-border {
+    border: 4px solid #D5EBDE;
+    padding: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .row {
+    margin: 5px 0px 0px 0px;
+  }
+}
