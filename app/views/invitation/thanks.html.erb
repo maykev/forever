@@ -6,7 +6,11 @@
             <% else %>
                 <p>Thank you for responding.</p>
 
-                <p>We look forward to seeing <%= @invitees[0..-2].join(', ') %> and <%= @invitees.last %> at the wedding</p>
+                <% if @invitees.count > 1 %>
+                    <p>We look forward to seeing <%= @invitees[0..-2].join(', ') %> and <%= @invitees.last %> at the wedding.</p>
+                <% else %>
+                    <p>We look forward to seeing <%= @invitees.first %> at the wedding.</p>
+                <% end %>
             <% end %>
         </div>
     </div>

@@ -204,16 +204,22 @@ RSpec.describe InvitationController, type: :controller do
             end
 
             it 'assigns invitees' do
+                invitee_1.update_attributes!(accepted: true)
+                invitee_2.update_attributes!(accepted: true)
+                invitee_3.update_attributes!(accepted: true)
+
                 get :thanks, {id: invitation.id}
 
                 expect(assigns(@invitees)[:invitees]).to eq([invitee_1.name, invitee_2.name, invitee_3.name])
             end
 
-            context 'single invitee' do
+            context 'single invitee accepted' do
                 let!(:invitee_2) { nil }
                 let!(:invitee_3) { nil }
 
                 it 'shows the invitee name' do
+                    invitee_1.update_attributes!(accepted: true)
+
                     get :thanks, {id: invitation.id}
 
                     expect(response.body).to match /We look forward to seeing #{invitee_1.name} at the wedding/im
@@ -221,10 +227,24 @@ RSpec.describe InvitationController, type: :controller do
             end
 
             context 'multiple invitees' do
-                it 'shows the invitee names' do
+                it 'shows the accepted invitee names' do
+                    invitee_1.update_attributes!(accepted: true)
+                    invitee_2.update_attributes!(accepted: true)
+                    invitee_3.update_attributes!(accepted: true)
+
                     get :thanks, {id: invitation.id}
 
                     expect(response.body).to match /We look forward to seeing #{invitee_1.name}, #{invitee_2.name} and #{invitee_3.name} at the wedding/im
+                end
+
+                it 'does not show the declined invitee names' do
+                    invitee_1.update_attributes!(accepted: true)
+                    invitee_2.update_attributes!(accepted: true)
+                    invitee_3.update_attributes!(accepted: false)
+
+                    get :thanks, {id: invitation.id}
+
+                    expect(response.body).to match /We look forward to seeing #{invitee_1.name} and #{invitee_2.name} at the wedding/im
                 end
             end
         end

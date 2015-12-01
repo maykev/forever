@@ -49,6 +49,6 @@ class InvitationController < ApplicationController
     end
 
     def thanks
-        @invitees = Invitee.where(invitation_id: params[:id]).order(:name).pluck(:name)
+        @invitees = Invitee.where(invitation_id: params[:id], accepted: true).order(:name).pluck(:name)
     end
 end

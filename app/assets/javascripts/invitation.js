@@ -1,4 +1,4 @@
-$(function () {
+$(document).on('page:change', function() {
     $('#invitation-submit').on('click', function(e) {
         e.preventDefault();
 

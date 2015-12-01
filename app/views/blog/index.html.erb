@@ -1,1 +1,10 @@
-<h1>Blog</h1>
+<div id="blog">
+    <% @blogs.each do |blog| %>
+        <div class="thumbnail-border">
+            <div class="thumbnail">
+                <p><%= blog.date %></p>
+                <p><%= blog.entry %></p>
+            </div>
+        </div>
+    <% end %>
+</div>
