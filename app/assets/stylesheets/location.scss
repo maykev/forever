@@ -1,3 +1,25 @@
-// Place all the styles related to the location controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#location {
+    p {
+        text-align: left;
+    }
+
+    iframe {
+        width: 100%;
+        height: 450px;
+        frameborder: 0px;
+        border: 0px;
+        padding: 10px
+    }
+
+    hr {
+        border-color: #777777;
+    }
+
+    .thumbnail-border {
+        width: 70%;
+    }
+
+    .thumbnail {
+        padding: 15px;
+    }
+}
