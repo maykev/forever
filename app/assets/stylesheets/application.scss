@@ -1,87 +1,157 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
 @import "blog";
+@import "contact_us";
+@import "emma";
 @import "invitation";
 @import "location";
 @import "main";
 @import "registry";
 @import "rsvp";
 
+@font-face {
+    font-family: "28 Days Later";
+    src: url("28DaysLater.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Alex Brush";
+    src: url("AlexBrush-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Monterey";
+    src: url("MontereyFLF.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Riesling";
+    src: url("riesling.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Upper East Side";
+    src: url("UpperEastSide.ttf") format("truetype");
+}
+
 html {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  background-image: url("background.jpg");
-  height: 100%;
+    background-image: url("background.jpg");
+    min-height: 1000px;
 }
 
 hr {
-  margin-bottom: 10px;
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
+    margin-bottom: 10px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container {
-  background-color: whitesmoke;
-  max-width: 1024px;
-  height: 100%;
-  padding: 0px;
-  padding-bottom: 10px;
+    background-color: white;
+    max-width: 1024px;
+    height: 100%;
+    padding: 0px;
+    padding-bottom: 10px;
 }
 
 .navbar {
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #FCE2D3;
-  border-color: #FCE2D3;
-  border-radius: 0px;
-  font-size: 16px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FCE2D3;
+    border-color: #FCE2D3;
+    border-radius: 0px;
+    font-family: "Monterey";
+    font-size: 18px;
+}
+
+.navbar-default {
+    background-color: #FCE2D3;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #568C6C;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: black;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #6CA985;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border: none;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #D5EBDE;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #568C6C;
 }
 
 .navbar-brand {
-  padding: 5px 15px 5px 15px;
+    font-family: "Alex Brush";
+    font-size: 36px;
+    padding: 18px 15px 5px 15px;
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #6CA985;
 }
 
 .navbar-tramline {
-  border: 1px solid #FCE2D3;
-  background-color: #FCE2D3;
-  height: 3px;
+    border: 1px solid #FCE2D3;
+    background-color: #FCE2D3;
+    height: 3px;
 
-  &.top {
-    margin-top: 0px;
-    margin-bottom: 5px;
-  }
+    &.top {
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
 
-  &.bottom {
-    margin-top: -15px;
-  }
+    &.bottom {
+        margin-top: -15px;
+    }
 }
 
 .thumbnail {
-  background-color: #D5EBDE;
-  border: 1px solid #D5EBDE;
-  border-radius: 0px;
-  margin-bottom: 0px;
-  text-align: center;
+    background-color: #D5EBDE;
+    border: 1px solid #D5EBDE;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+
+    &:hover {
+        border: 1px solid #D5EBDE;
+    }
 }
 
 .thumbnail-border {
-  border: 4px solid #D5EBDE;
-  padding: 2px;
-  margin-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
+    border: 4px solid #D5EBDE;
+    padding: 2px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn {
-  background-color: #646265;
-  border-color: #646265;
-  border-radius: 0px;
-  font-style: italic;
-  color: whitesmoke;
+    background-color: #646265;
+    border-color: #646265;
+    border-radius: 0px;
+    font-family: "Monterey";
+    color: white;
 }

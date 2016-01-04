@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     root 'main#index'
 
     resources :blog, only: [:index]
-    resources :contact_us, only: [:index]
+    resources :contact_us, only: [:index, :create]
     resources :emma, only: [:index]
     resources :gallery, only: [:index]
     resources :invitation, only: [:index, :show, :update]
