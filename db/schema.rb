@@ -11,27 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151208003547) do
+ActiveRecord::Schema.define(version: 20151128231142) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "blogs", force: :cascade do |t|
-    t.date   "date",  null: false
-    t.string "entry", null: false
-  end
-
-  create_table "emails", force: :cascade do |t|
-    t.string   "from",       null: false
-    t.string   "name",       null: false
-    t.string   "message",    null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "invitations", force: :cascade do |t|
     t.string   "email",                         null: false
     t.string   "name",                          null: false
+    t.boolean  "plus_one",      default: false
     t.boolean  "responded",     default: false, null: false
     t.datetime "response_date"
   end
