@@ -144,10 +144,15 @@
         background-color: #ABDDC6;
 
         .carousel {
-            max-width: 600px;
-            max-height: 400px;
+            max-width: 700px;
+            max-height: 506px;
             padding: 0px;
-            border: 2px solid white;
+            border: 3px solid white;
+
+            .item {
+                max-width: 700px;
+                max-height: 500px;
+            }
         }
     }
 
@@ -156,10 +161,15 @@
         color: black;
 
         .carousel {
-            max-width: 600px;
-            max-height: 400px;
+            max-width: 700px;
+            max-height: 506px;
             padding: 0px;
-            border: 2px solid white;
+            border: 3px solid white;
+
+            .item {
+                max-width: 700px;
+                max-height: 500px;
+            }
         }
     }
 
