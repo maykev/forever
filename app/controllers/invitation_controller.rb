@@ -47,6 +47,8 @@ class InvitationController < ApplicationController
             Invitee.create!(name: params[:invitation][:plus_one_name], accepted: true, invitation: invitation)
         end
 
+        InvitationMailer.invitation_email(invitation).deliver_now
+
         head :ok
     rescue ActiveRecord::RecordNotFound
         head :not_found

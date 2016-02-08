@@ -61,6 +61,8 @@ GEM
       railties (>= 3.0.0)
     font-awesome-rails (4.5.0.0)
       railties (>= 3.2, < 5.0)
+    font-awesome-sass (4.5.0)
+      sass (>= 3.2)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     haml (4.0.7)
@@ -186,6 +188,8 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
   factory_girl_rails
+  font-awesome-rails
+  font-awesome-sass (~> 4.5.0)
   jquery-rails
   pg (~> 0.15)
   rails (= 4.2.5)

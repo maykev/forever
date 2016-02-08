@@ -1,0 +1,2 @@
+class RsvpMailer < ApplicationMailer
+end
