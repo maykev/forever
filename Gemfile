@@ -7,6 +7,7 @@ gem "font-awesome-rails"
 gem 'font-awesome-sass', '~> 4.5.0'
 gem 'jquery-rails'
 gem 'pg', '~> 0.15'
+gem 'rails_12factor'
 gem 'rails_admin'
 gem 'sass-rails'
 gem 'turbolinks'
@@ -22,3 +23,5 @@ end
 group :development do
     gem 'spring'
 end
+
+ruby "2.2.1"
