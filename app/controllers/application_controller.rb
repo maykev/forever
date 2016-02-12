@@ -3,11 +3,11 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  after_action :allow_godaddy_iframe
+  after_action :allow_iframe
 
   private
 
-  def allow_godaddy_iframe
-    response.headers['X-Frame-Options'] = 'ALLOW-FROM http://amyandkevinswedding.com'
+  def allow_iframe
+    response.headers.except! 'X-Frame-Options'
   end
 end
