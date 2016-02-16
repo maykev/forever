@@ -23,16 +23,16 @@ Invitee.create(name: 'Sharon May', invitation: invitation)
 invitation = Invitation.create(name: 'Gemma', email: 'stoneseasonsx@gmail.com')
 Invitee.create(name: 'Gemma May', invitation: invitation)
 
-invitation = Invitation.create(name: 'Nana', email: '???')
-Invitee.create(name: 'Audrey Goodlet', invitation: invitation)
+invitation = Invitation.create(name: 'Nana', responded: true)
+Invitee.create(name: 'Audrey Goodlet', invitation: invitation, accepted: false)
 
-invitation = Invitation.create(name: 'Grant, Michelle, Chantelle, Natasha, Taylor & ???', email: 'michelleo244@gmail.com')
+invitation = Invitation.create(name: 'Grant, Michelle, Chantelle, Natasha, Taylor & Tye', email: 'michelleo244@gmail.com')
 Invitee.create(name: 'Grant Olivier', invitation: invitation)
 Invitee.create(name: 'Michelle Olivier', invitation: invitation)
 Invitee.create(name: 'Chantelle Olivier', invitation: invitation)
 Invitee.create(name: 'Natasha Olivier', invitation: invitation)
 Invitee.create(name: 'Taylor Olivier', invitation: invitation)
-Invitee.create(name: '???', invitation: invitation)
+Invitee.create(name: 'Tye', invitation: invitation)
 
 invitation = Invitation.create(name: 'Billy', email: 'b-goodlet@blueyonder.co.uk')
 Invitee.create(name: 'Billy Goodlet', invitation: invitation)
@@ -41,31 +41,31 @@ invitation = Invitation.create(name: 'Robert & Phanessa', email: 'rgoodlet@cae.c
 Invitee.create(name: 'Robert Goodlet', invitation: invitation)
 Invitee.create(name: 'Phanessa Goodlet', invitation: invitation)
 
-invitation = Invitation.create(name: 'David', email: 'davidgoodlet@hotmail.com')
-Invitee.create(name: 'David Goodlet', invitation: invitation)
-Invitee.create(name: '???', invitation: invitation)
+invitation = Invitation.create(name: 'David & Stephanie', email: 'davidgoodlet@hotmail.com')
+Invitee.create(name: 'David', invitation: invitation)
+Invitee.create(name: 'Stephanie', invitation: invitation)
 
-invitation = Invitation.create(name: 'Mom', email: 'kevinandamymay@gmail.com')
+invitation = Invitation.create(name: 'Mom')
 Invitee.create(name: 'Nancy Panyanouvong', invitation: invitation)
 
-invitation = Invitation.create(name: 'Annie, Sarom & Madison', email: '???')
+invitation = Invitation.create(name: 'Annie, Sarom & Madison')
 Invitee.create(name: 'Annie Panyanouvong', invitation: invitation)
 Invitee.create(name: 'Sarom Ngov', invitation: invitation)
 Invitee.create(name: 'Madison Ngov', invitation: invitation)
 
-invitation = Invitation.create(name: 'Cindy', email: '???')
+invitation = Invitation.create(name: 'Cindy')
 Invitee.create(name: 'Cindy Panyanouvong', invitation: invitation)
 
-invitation = Invitation.create(name: 'Jimmy', email: '???')
+invitation = Invitation.create(name: 'Jimmy')
 Invitee.create(name: 'Jimmy Panyanouvong', invitation: invitation)
 
-invitation = Invitation.create(name: 'Tony', email: '???')
+invitation = Invitation.create(name: 'Tony')
 Invitee.create(name: 'Tony Panyanouvong', invitation: invitation)
 
-invitation = Invitation.create(name: 'Kevin', email: '???')
+invitation = Invitation.create(name: 'Kevin')
 Invitee.create(name: 'Kevin Panyanouvong', invitation: invitation)
 
-invitation = Invitation.create(name: 'Johnson', email: '???')
+invitation = Invitation.create(name: 'Johnson')
 Invitee.create(name: 'Johnson Panyanouvong', invitation: invitation)
 
 invitation = Invitation.create(name: 'Mary, Wremaine, Temara & Rodney', email: 'RDAWilson@gmail.com')
