@@ -15,28 +15,34 @@
 }
 
 html, body {
-    min-height: 700px;
+    min-height: 900px;
     height: 100%;
 }
 
+@media (min-width: 768px) {
+    .navbar-nav {
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
+}
+
 .navbar {
-    width: 100%;
     background-color: black;
     opacity: 0.6;
     padding-left: 15px;
     padding-right: 15px;
     font-family: "Monterey";
     font-size: 16px;
-
-    @media (min-width: 768px) {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
 }
 
 .navbar-default {
     .navbar-brand, .navbar-brand:visited, .navbar-brand:focus {
+        @media (min-width: 768px) {
+            display: none;
+        }
+
         font-family: "Alex Brush";
         font-size: 32px;
         color: white;
@@ -57,6 +63,17 @@ html, body {
                 color: #ABDDC6;
                 text-decoration: underline;
             }
+        }
+
+        #home {
+            @media (max-width: 768px) {
+                display: none;
+            }
+
+            font-family: "Alex Brush";
+            font-size: 32px;
+            padding: 18px 15px 5px 15px;
+            text-decoration: none;
         }
     }
 }

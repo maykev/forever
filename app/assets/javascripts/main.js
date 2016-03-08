@@ -1,5 +1,8 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
+$(window).load(updateLayout);
+$(window).resize(updateLayout);
+
 $(function() {
     $(".navbar a").click(function(e) {
         e.preventDefault();
@@ -111,3 +114,35 @@ $(function() {
         $('#invitation-submit').hide();
     }
 });
+
+function updateLayout() {
+    var bodyHeight = Math.max($(window).height(), 900);
+
+    $('.home div:first').css({
+      'padding-top': (bodyHeight - $('.home div:first').height()) / 2
+    });
+
+    $('.event-info div:first').css({
+      'padding-top': (bodyHeight - $('.event-info div:first').height()) / 2
+    });
+
+    $('.our-story .slide-inner').css({
+      'padding-top': (bodyHeight - $('.our-story .slide-inner').height()) / 2
+    });
+
+    $('.pictures div:first').css({
+      'padding-top': (bodyHeight - $('.pictures div:first').height()) / 2
+    });
+
+    $('.emma div:first').css({
+      'padding-top': (bodyHeight - $('.emma div:first').height()) / 2
+    });
+
+    $('.rsvp div:first').css({
+      'padding-top': (bodyHeight - $('.rsvp div:first').height()) / 2
+    });
+
+    $('.registry div:first').css({
+      'padding-top': (bodyHeight - $('.registry div:first').height()) / 2
+    });
+}
