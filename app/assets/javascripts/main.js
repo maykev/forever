@@ -116,7 +116,7 @@ $(function() {
 });
 
 function updateLayout() {
-    var bodyHeight = Math.max($(window).height(), 900);
+    var bodyHeight = Math.max($(window).height(), 835);
 
     $('.home div:first').css({
       'padding-top': (bodyHeight - $('.home div:first').height()) / 2
