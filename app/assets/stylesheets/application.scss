@@ -52,23 +52,26 @@
         li {
             a, a:visited, a:focus {
                 color: white;
+
+                &.logo {
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
+
+                    font-family: "Alex Brush";
+                    font-size: 32px;
+                    padding: 18px 15px 5px 15px;
+                }
             }
 
             a:hover {
                 color: #ABDDC6;
                 text-decoration: underline;
-            }
-        }
 
-        #home {
-            @media (max-width: 768px) {
-                display: none;
+                &.logo {
+                    text-decoration: none;
+                }
             }
-
-            font-family: "Alex Brush";
-            font-size: 32px;
-            padding: 18px 15px 5px 15px;
-            text-decoration: none;
         }
     }
 }
