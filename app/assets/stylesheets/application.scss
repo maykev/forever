@@ -14,11 +14,6 @@
     src: url("MontereyFLF.ttf") format("truetype");
 }
 
-html, body {
-    min-height: 835px;
-    height: 100%;
-}
-
 @media (min-width: 768px) {
     .navbar-nav {
         float:none;
