@@ -1,3 +1,7 @@
+invitation = Invitation.create(name: 'Kevin & Amy', email: 'kevin.r.may.81@gmail.com', plus_one: true)
+Invitee.create(name: 'Kevin May', invitation: invitation)
+Invitee.create(name: 'Amy Panyanouvong', invitation: invitation)
+
 invitation = Invitation.create(name: 'Mum & Dad', email: 'jo.may88@yahoo.co.uk')
 Invitee.create(name: 'Joanne May', invitation: invitation)
 Invitee.create(name: 'Steven May', invitation: invitation)
