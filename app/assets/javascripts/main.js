@@ -1,7 +1,7 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
-// $(window).load(updateLayout);
-// $(window).resize(updateLayout);
+$(window).load(updateLayout);
+$(window).resize(updateLayout);
 
 $(function() {
     $(".navbar a").click(function(e) {
