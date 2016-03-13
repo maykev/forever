@@ -4,13 +4,13 @@
 // $(window).resize(updateLayout);
 
 $(function() {
-    // $(".navbar a").click(function(e) {
-    //     e.preventDefault();
-    //
-    //     $('html, body').animate({
-    //         scrollTop: $("." + e.target.id).offset().top
-    //     }, 1000);
-    // });
+    $(".navbar a").click(function(e) {
+        e.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $("." + e.target.id).offset().top
+        }, 1000);
+    });
 
     $(".heart").mouseover(function(e) {
         e.preventDefault();
