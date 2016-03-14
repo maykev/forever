@@ -72,13 +72,13 @@ Invitee.create(name: 'Kevin Panyanouvong', invitation: invitation)
 invitation = Invitation.create(name: 'Johnson')
 Invitee.create(name: 'Johnson Panyanouvong', invitation: invitation)
 
-invitation = Invitation.create(name: 'Mary, Wremaine, Temara & Rodney', email: 'RDAWilson@gmail.com')
+invitation = Invitation.create(name: 'Mary, Wremaine, Temara & Rodney', email: 'rdawilson@gmail.com')
 Invitee.create(name: 'Mary Wilson', invitation: invitation)
 Invitee.create(name: 'Wremaine Wilson', invitation: invitation)
 Invitee.create(name: 'Temara Wilson', invitation: invitation)
 Invitee.create(name: 'Rodney Wilson', invitation: invitation)
 
-invitation = Invitation.create(name: 'Tom, Stephanie, Frankie, Alexa, Ayana & Allison', email: 'Stephanieamber.thongdy@gmail.com')
+invitation = Invitation.create(name: 'Tom, Stephanie, Frankie, Alexa, Ayana & Allison', email: 'stephanieamber.thongdy@gmail.com')
 Invitee.create(name: 'Tom Thongdy', invitation: invitation)
 Invitee.create(name: 'Stephanie Thongdy', invitation: invitation)
 Invitee.create(name: 'Frankie Garcia', invitation: invitation)
@@ -117,31 +117,31 @@ Invitee.create(name: 'Tyler Van Wulven', invitation: invitation)
 Invitee.create(name: 'Jessica Scott', invitation: invitation)
 
 invitation = Invitation.create(name: 'Brett & Betsy', email: 'brettgladys@gmail.com')
-Invitee.create(name: 'Brett Glady', invitation: invitation)
+Invitee.create(name: 'Brett Gladys', invitation: invitation)
 Invitee.create(name: 'Betsy Faust', invitation: invitation)
 
 invitation = Invitation.create(name: 'Bryan & Layne', email: 'bryanmiyamoto@yahoo.com')
 Invitee.create(name: 'Bryan Miyamoto', invitation: invitation)
 Invitee.create(name: 'Layne Miyamoto', invitation: invitation)
 
-invitation = Invitation.create(name: 'Henry & Cindy', email: 'Henrysyoung@yahoo.com')
+invitation = Invitation.create(name: 'Henry & Cindy', email: 'henrysyoung@yahoo.com')
 Invitee.create(name: 'Henry Young', invitation: invitation)
 Invitee.create(name: 'Cindy Reyes', invitation: invitation)
 
 invitation = Invitation.create(name: 'Francis', email: 'ketchupyum85@gmail.com')
 Invitee.create(name: 'Francis Go', invitation: invitation)
 
-invitation = Invitation.create(name: 'Ericson', email: 'Ehrisco@hotmail.com')
+invitation = Invitation.create(name: 'Ericson', email: 'ehrisco@hotmail.com')
 Invitee.create(name: 'Ericson Bautista', invitation: invitation)
 
-invitation = Invitation.create(name: 'Susana & Leland', email: 'Scoronil@gmail.com')
+invitation = Invitation.create(name: 'Susana & Leland', email: 'scoronil@gmail.com')
 Invitee.create(name: 'Susana Coronilla', invitation: invitation)
 Invitee.create(name: 'Leland Copeland', invitation: invitation)
 
-invitation = Invitation.create(name: 'Janel', email: 'Janel.bramlett@gmail.com')
+invitation = Invitation.create(name: 'Janel', email: 'janel.bramlett@gmail.com')
 Invitee.create(name: 'Janel Bramlett', invitation: invitation)
 
-invitation = Invitation.create(name: 'Denise & Nicholai', email: 'Dmallari@gmail.com')
+invitation = Invitation.create(name: 'Denise & Nicholai', email: 'dmallari@gmail.com')
 Invitee.create(name: 'Denise Mallari', invitation: invitation)
 Invitee.create(name: 'Nicholai Perez', invitation: invitation)
 
@@ -164,7 +164,7 @@ Invitee.create(name: 'Yuki Kobayashi', invitation: invitation)
 invitation = Invitation.create(name: 'Isabella', email: 'isssanche@gmail.com')
 Invitee.create(name: 'Isabella Sanchez', invitation: invitation)
 
-invitation = Invitation.create(name: 'Jarrod, Megan, Chase & Aubrey', email: 'Megan.bierman@gmail.com')
+invitation = Invitation.create(name: 'Jarrod, Megan, Chase & Aubrey', email: 'megan.bierman@gmail.com')
 Invitee.create(name: 'Jarrod Bierman', invitation: invitation)
 Invitee.create(name: 'Megan Bierman', invitation: invitation)
 Invitee.create(name: 'Chase Bierman', invitation: invitation)
@@ -181,12 +181,12 @@ invitation = Invitation.create(name: 'Lori & Thomas', email: 'taylor.lori.j@gmai
 Invitee.create(name: 'Lori Taylor', invitation: invitation)
 Invitee.create(name: 'Thomas Olalia', invitation: invitation)
 
-invitation = Invitation.create(name: 'Shaun & Kate', email: 'Icshaun@gmail.com')
+invitation = Invitation.create(name: 'Shaun & Kate', email: 'icshaun@gmail.com')
 Invitee.create(name: 'Shaun Luc', invitation: invitation)
 Invitee.create(name: 'Kate Luc', invitation: invitation)
 
-invitation = Invitation.create(name: 'Darwin', email: 'Dspagaduan@gmail.com')
-Invitee.create(name: 'Darwin Pagduan', invitation: invitation)
+invitation = Invitation.create(name: 'Darwin', email: 'dspagaduan@gmail.com')
+Invitee.create(name: 'Darwin Pagaduan', invitation: invitation)
 
 invitation = Invitation.create(name: 'Amanda & Shudhanshu', email: 'amandauyenvu@gmail.com')
 Invitee.create(name: 'Amanda Vu', invitation: invitation)
@@ -241,7 +241,7 @@ Invitee.create(name: 'Desiree Rivera', invitation: invitation)
 invitation = Invitation.create(name: 'Lila', email: 'lyelars@gmail.com')
 Invitee.create(name: 'Lila Woodland', invitation: invitation)
 
-invitation = Invitation.create(name: 'Wes', email: 'Dwesleywoodland@gmail.com')
+invitation = Invitation.create(name: 'Wes', email: 'dwesleywoodland@gmail.com')
 Invitee.create(name: 'Wes Woodland', invitation: invitation)
 
 invitation = Invitation.create(name: 'Scott & Mary', email: 'stolper@gmail.com')
@@ -256,6 +256,6 @@ invitation = Invitation.create(name: 'James & Michelle', email: 'joshea@pdmsolut
 Invitee.create(name: "James O'Shea", invitation: invitation)
 Invitee.create(name: "Michelle O'Shea", invitation: invitation)
 
-invitation = Invitation.create(name: 'Tood & Amy', email: 'tboteler@gmail.com')
-Invitee.create(name: 'Tood Boteler', invitation: invitation)
+invitation = Invitation.create(name: 'Todd & Amy', email: 'tboteler@gmail.com')
+Invitee.create(name: 'Todd Boteler', invitation: invitation)
 Invitee.create(name: 'Amy Boteler', invitation: invitation)

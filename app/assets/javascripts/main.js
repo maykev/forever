@@ -32,7 +32,7 @@ $(function() {
         $('#not-found').hide();
         $('#contact-us').hide();
 
-        $.get('/invitation?email=' + $('.email').val())
+        $.get('/invitation?email=' + $('.email').val().toLowerCase())
         .done(function(data, textStatus, xhr) {
             if (xhr.status === 202) {
                 $('#already-responded').show();
