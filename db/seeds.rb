@@ -199,7 +199,7 @@ Invitee.create(name: 'Melinda Lepinski', invitation: invitation)
 invitation = Invitation.create(name: 'Erick', email: 'aradiohead@gmail.com')
 Invitee.create(name: 'Erick Banks', invitation: invitation)
 
-invitation = Invitation.create(name: 'Josh, Gemma, Charlie and Mike', email: 'jjwink19@hotmail.com')
+invitation = Invitation.create(name: 'Josh, Gemma, Charlie & Mike', email: 'jjwink19@hotmail.com')
 Invitee.create(name: 'Josh Winkelman', invitation: invitation)
 Invitee.create(name: 'Gemma Winkelman', invitation: invitation)
 Invitee.create(name: 'Charlie Winkelman', invitation: invitation)
