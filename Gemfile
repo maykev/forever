@@ -6,6 +6,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem "font-awesome-rails"
 gem 'font-awesome-sass', '~> 4.5.0'
 gem 'jquery-rails'
+gem 'newrelic_rpm'
 gem 'pg', '~> 0.15'
 gem 'rails_12factor'
 gem 'rails_admin'

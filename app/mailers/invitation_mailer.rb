@@ -5,6 +5,6 @@ class InvitationMailer < ApplicationMailer
 
         attachments['Invitation.pdf'] = File.read(Rails.root.join('app', 'assets', 'pdf', 'Invitation.pdf'))
 
-        mail(to: invitation.email, subject: "Amy & Kevin's Wedding Invitation")
+        mail(to: invitation.email, from: "Amy & Kevin", subject: "Amy & Kevin's Wedding Invitation")
     end
 end
